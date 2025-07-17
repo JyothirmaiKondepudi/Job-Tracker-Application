@@ -14,7 +14,7 @@ function processJobEmails() {
   const labelProcessed = getOrCreateLabel(PROCESSED_LABEL);
 
   // build “today” / “tomorrow” for Gmail search
-  const today   = new Date("06-20-2025");
+  const today   = new Date();
   const yyyy    = today.getFullYear();
   const mm      = String(today.getMonth()+1).padStart(2,'0');
   const dd      = String(today.getDate()).padStart(2,'0');
